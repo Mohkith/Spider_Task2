@@ -17,3 +17,19 @@ OUTPUT:
 HELP:
   -h help
 ```
+
+# Required Libraries
+- argparse
+- json
+- requests
+- sublist3r
+- dns.resolver
+- whois
+- subprocess
+- geoip2.database
+
+Installing the Libraries:
+``` sh
+pip install <module_name>
+```
+
