@@ -10,9 +10,13 @@ Run as such
 Flags
 
 -d  domain
+
 -nd out of scope domains
+
 -I ip_address
+
 -h help
+
 -o output file
 
 # If your are using VScode
