@@ -8,7 +8,7 @@ Usage:
 
 Flags:
 
-`INPUT':
+`INPUT`:
   -d  domain
   
   -nd out of scope domains
