@@ -2,13 +2,14 @@
 
 # Level 1
 
-Usage:
+`Usage`:
 
   ./Basic_Recon.py [FLAG]
 
-Flags:
+`Flags`:
 
-`INPUT`:
+INPUT:
+
   -d  domain
   
   -nd out of scope domains
