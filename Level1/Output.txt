@@ -1,0 +1,51 @@
+{
+    "domain": "example.com",
+    "crtsh_domains": [
+        "example.com",
+        "support.example.com",
+        "m.testexample.com",
+        "AS207960 Test Intermediate - example.com",
+        "*.example.com",
+        "www.example.com",
+        "m.example.com",
+        "user@example.com",
+        "products.example.com",
+        "dev.example.com",
+        "subjectname@example.com"
+    ],
+    "Sublist3r_domains": [
+        "AS207960 Test Intermediate - example.com",
+        "www.example.com",
+        "dev.example.com",
+        "m.example.com",
+        "products.example.com",
+        "support.example.com",
+        "m.testexample.com"
+    ],
+    "dns_domains": [],
+    "whois_domains": {
+        "domain_name": "EXAMPLE.COM",
+        "registrar": "RESERVED-Internet Assigned Numbers Authority",
+        "whois_server": "whois.iana.org",
+        "updated_date": "2024-08-14 07:01:34",
+        "creation_date": "1995-08-14 04:00:00",
+        "expiration_date": "2025-08-13 04:00:00",
+        "name_servers": [
+            "A.IANA-SERVERS.NET",
+            "B.IANA-SERVERS.NET"
+        ],
+        "status": [
+            "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+            "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+            "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"
+        ],
+        "dnssec": "signedDelegation"
+    },
+    "http_headers": {
+        "Servers": "No server banner found"
+    },
+    "Static_Files": {
+        "robots.txt": "Error fetching robots.txt:404 ",
+        "sitemap.xml": "Error fetching sitemap.xml:404 "
+    }
+}
