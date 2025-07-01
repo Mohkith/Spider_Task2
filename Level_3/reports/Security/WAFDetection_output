@@ -1,0 +1,44 @@
+{
+    "products.example.com": [],
+    "*.example.com": [],
+    "support.example.com": [],
+    "subjectname@example.com": [
+        {
+            "detected": false,
+            "firewall": "None",
+            "manufacturer": "None",
+            "trigger_url": null,
+            "url": "https://subjectname@example.com"
+        }
+    ],
+    "m.example.com": [],
+    "AS207960 Test Intermediate - example.com": [],
+    "example.com": [
+        {
+            "detected": false,
+            "firewall": "None",
+            "manufacturer": "None",
+            "trigger_url": null,
+            "url": "https://example.com"
+        }
+    ],
+    "www.example.com": [
+        {
+            "detected": false,
+            "firewall": "None",
+            "manufacturer": "None",
+            "trigger_url": null,
+            "url": "https://www.example.com"
+        }
+    ],
+    "user@example.com": [
+        {
+            "detected": false,
+            "firewall": "None",
+            "manufacturer": "None",
+            "trigger_url": null,
+            "url": "https://user@example.com"
+        }
+    ],
+    "m.testexample.com": []
+}
