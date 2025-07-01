@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+
+    <title>{% block title %}Recon_Automation{% endblock %}</title>
+</head>
+<body>
+    <div class="container">
+      <h1> Recon Report for {{ Recon_data.domain }}</h1>
+      <br>
+      
+      <h2> Subdomains from crtsh </h2>
+      {% if Recon_data.crtsh_domains %}
+      <ul>
+        {% for sub in Recon_data.crtsh_domains %} 
+        <li> {{ sub}} </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No crtsh domains Found</p>
+      {% endif %}
+      <br>
+
+      <h2>Subdomains from sublist3r</h2>
+      {% if Recon_data.sublist3r_domains %}
+      <ul>
+        {% for sub in Recon_data.sublist3r_domains %}
+        <li> {{ sub }} </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No sublist3r domains Found</p>
+      {% endif %}
+      <br>
+
+      <h2>DNS Domains</h2>
+      {% if Recon_data.dns_domains %}
+      <table class="table table-bordered">
+        {% for key,value in Recon_data.dns_domains.items() %}
+        <tr>
+          <th> {{ key }}</th>
+          <td> {{ value }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% else %}
+      <p> No DNS Domains found </p>
+      {% endif %}
+      <br>
+
+      <h2>Whois Info</h2>
+      {% if Recon_data.whois_domains %}
+      <table class="table table-bordered">
+        {%for key,value in Recon_data.whois_domains.items() %}
+        <tr>
+          <th> {{ key }}</th>
+          <td> {{ value }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% else %}
+      <p> No whois data found </p>
+      {% endif %}
+      <br>
+    </div>
+</body>
+</html>
