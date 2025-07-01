@@ -61,3 +61,15 @@ OUTPUT:
 HELP:
 -h       Help (Display this image)
 ```
+
+# Example Usage
+<h1 align='left'>
+  <img src='Level_2/Command2.png'>
+  <br>
+</h1>
+
+<h1 align='left'>
+  <img src='Level_2/Output2.1.png'>
+  <br>
+</h1>
+
